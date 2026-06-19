@@ -1,8 +1,12 @@
-const CACHE = 'jfit-v4';
+const CACHE = 'jfit-v5';
 const ASSETS = [
   './',
   './index.html',
   './css/styles.css',
+  './js/store.js',
+  './js/health.js',
+  './js/profile.js',
+  './js/dashboard.js',
   './js/app.js',
   './manifest.webmanifest',
   './icon-192.png',

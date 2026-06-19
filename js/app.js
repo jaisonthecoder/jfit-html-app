@@ -295,7 +295,28 @@ function renderHome(){
   const doneInPlan = days.filter(d=>state.done[d.id]).length;
   document.getElementById("stat-week").textContent = state.doneCount;
   document.getElementById("stat-kcal").textContent = state.kcalBurned;
-  document.querySelector(".progress-fill").style.width = Math.min(100,(doneInPlan/trainDays*100))+"%";
+
+  const heroProg = document.getElementById("hero-prog");
+  if(typeof JStore!=="undefined" && JStore.hasProfile()){
+    const p = JStore.getProfile();
+    const cur = JStore.currentWeight();
+    const goalEl = document.getElementById("hero-goal");
+    if(goalEl && cur!=null && p.goalWeightKg!=null) goalEl.textContent = `${cur} → ${p.goalWeightKg}`;
+    const bmr = Health.bmr({sex:p.sex,age:p.age,heightCm:p.heightCm,weightKg:cur});
+    const tgt = Health.dailyTarget(Health.tdee(bmr,p.activity), p.goalType, p.targetRateKgPerWk, p.sex);
+    const tEl = document.getElementById("stat-target"); if(tEl && tgt) tEl.textContent = tgt.target;
+    const badge = document.getElementById("hero-badge");
+    if(badge) badge.textContent = p.goalType==="lose"?"Fat loss":p.goalType==="gain"?"Muscle gain":"Maintain";
+    if(heroProg && p.goalWeightKg!=null && p.startWeightKg!=null){
+      const denom = p.startWeightKg - p.goalWeightKg;
+      const pct = denom!==0 ? ((p.startWeightKg - cur)/denom)*100 : 0;
+      heroProg.style.width = Math.max(0,Math.min(100,pct)).toFixed(0)+"%";
+    } else if(heroProg){
+      heroProg.style.width = Math.min(100,(doneInPlan/trainDays*100))+"%";
+    }
+  } else if(heroProg){
+    heroProg.style.width = Math.min(100,(doneInPlan/trainDays*100))+"%";
+  }
 }
 
 function switchPlan(p){
@@ -454,6 +475,7 @@ function cycleStatus(exIdx){
     state.done[currentDay.id]=true; state.doneCount++;
     let kc=0; arr.forEach(i=>kc+=LIB[currentDay.type][i].kcal*4);
     state.kcalBurned+=kc;
+    if(typeof JStore!=="undefined") JStore.addCaloriesToday(kc);
     toast("💪 "+currentDay.name+" complete · "+kc+" kcal!");
   }
 }
@@ -583,6 +605,7 @@ function finishSession(){
   });
   if(kc===0) kc = session.ex.reduce((a,e)=>a+e.kcal*4,0); // assume done
   state.kcalBurned += kc;
+  if(typeof JStore!=="undefined") JStore.addCaloriesToday(kc);
   if(!state.done[session.day.id]){ state.done[session.day.id]=true; state.doneCount++; }
   toast(`💪 ${session.day.name} done · ${kc} kcal burned!`);
   session=null;
@@ -597,7 +620,7 @@ function quitSession(){
 
 /* ---- nav helpers ---- */
 function showScreen(s){
-  ["home","builder","session","plan"].forEach(x=>
+  ["home","builder","session","plan","dash","profile"].forEach(x=>
     document.getElementById("screen-"+x).classList.toggle("hidden",x!==s));
   window.scrollTo(0,0);
 }
@@ -605,11 +628,15 @@ function goHome(){ renderHome(); showScreen("home"); setNav("home"); }
 function nav(s){
   if(s==="home"){ renderHome(); showScreen("home"); }
   if(s==="plan"){ showScreen("plan"); }
+  if(s==="dash"){ if(typeof renderDashboard==="function") renderDashboard(); showScreen("dash"); }
+  if(s==="profile"){ if(typeof renderProfile==="function") renderProfile(); showScreen("profile"); }
   setNav(s);
 }
 function setNav(s){
-  document.getElementById("nav-home").classList.toggle("on",s==="home");
-  document.getElementById("nav-plan").classList.toggle("on",s==="plan");
+  ["home","dash","plan","profile"].forEach(k=>{
+    const el=document.getElementById("nav-"+k);
+    if(el) el.classList.toggle("on",s===k);
+  });
 }
 
 let toastT;
