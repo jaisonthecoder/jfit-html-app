@@ -22,76 +22,76 @@ function gifFallback(img){
 }
 const LIB = {
   push:[
-    {n:"Barbell Bench Press",eq:"Barbell, Bench",kcal:9,g:U+"2021/02/Barbell-Bench-Press.gif",d:"Lie flat, grip just outside shoulders. Lower bar to mid-chest, press up explosively. Keep shoulder blades pinned."},
-    {n:"Incline Barbell Bench Press",eq:"Barbell, Bench",kcal:8,g:U+"2021/02/Incline-Barbell-Bench-Press.gif",d:"Bench at 30–45°. Targets upper chest. Lower to upper chest, drive up without flaring elbows."},
-    {n:"Pec Deck Fly",eq:"Machine",kcal:6,g:U+"2021/02/Pec-Deck-Fly.gif",d:"Sit with back flat against pad. Bring arms together in a hugging arc, squeeze chest, control the return."},
-    {n:"Incline Chest Fly Machine",eq:"Machine",kcal:6,g:U+"2023/06/Incline-Chest-Fly-Machine.gif",d:"Set seat so handles align with upper chest. Press handles together, squeeze, slow eccentric."},
-    {n:"Low Cable Crossover",eq:"Cable",kcal:7,g:U+"2021/02/Low-Cable-Crossover.gif",d:"Pulleys low, sweep handles up and in toward chest. Great for lower/inner chest definition."},
-    {n:"High Cable Crossover",eq:"Cable",kcal:7,g:U+"2021/02/High-Cable-Crossover.gif",d:"Pulleys high, pull down and across body. Hits lower chest. Slight forward lean."},
-    {n:"Cable Upper Chest Crossover",eq:"Cable",kcal:7,g:U+"2021/10/Cable-Upper-Chest-Crossovers.gif",d:"Pulleys low, drive handles upward and together. Emphasises the upper chest fibres."},
-    {n:"Dumbbell Fly",eq:"Dumbbells, Bench",kcal:6,g:U+"2021/02/Dumbbell-Fly.gif",d:"Flat bench, slight elbow bend. Open arms wide in arc, feel chest stretch, bring back up."},
-    {n:"Dumbbell Pullover",eq:"Dumbbells, Bench",kcal:7,g:U+"2021/02/Dumbbell-Pullover.gif",d:"Hold one DB over chest, lower behind head in arc, pull back over. Chest + lat stretch."},
-    {n:"Overhead Barbell Press",eq:"Barbell",kcal:8,g:U+"2021/02/Barbell-Shoulder-Press.gif",d:"Standing, bar at shoulders. Press overhead, lock out, lower under control. Brace core hard."},
-    {n:"Dumbbell Shoulder Press",eq:"Dumbbells",kcal:7,g:U+"2021/02/Dumbbell-Shoulder-Press.gif",d:"Seated or standing. Press DBs from shoulder height to overhead, palms forward, no arching."},
-    {n:"Dumbbell Lateral Raise",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Lateral-Raise.gif",d:"Slight bend in elbows, raise DBs out to sides to shoulder height. Lead with elbows, control down."},
-    {n:"Cable Lateral Raise",eq:"Cable",kcal:5,g:U+"2021/02/Cable-Lateral-Raise.gif",d:"Cable behind back, raise arm out to side. Constant tension on the side delt throughout."},
-    {n:"Front Dumbbell Raise",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Front-Raise.gif",d:"Raise DBs straight in front to shoulder height. Targets front delts. No swinging."},
-    {n:"Arnold Press",eq:"Dumbbells",kcal:7,g:U+"2021/08/Arnold-Press.gif",d:"Start palms facing you, rotate out as you press overhead. Hits all three delt heads."},
-    {n:"Machine Shoulder Press",eq:"Machine",kcal:6,g:U+"2021/08/Lever-Shoulder-Press.gif",d:"Seated, back flat. Press handles overhead. Stable path, good for progressive overload."},
-    {n:"Triceps Pushdown",eq:"Cable",kcal:5,g:U+"2021/02/Pushdown.gif",d:"Elbows pinned at sides, push bar down to full extension, squeeze triceps, control up."},
-    {n:"One-Arm Triceps Pushdown",eq:"Cable",kcal:5,g:U+"2022/11/One-arm-triceps-pushdown.gif",d:"Single arm, elbow pinned, push handle down to full lockout. Squeeze triceps, control up. Great for fixing side-to-side imbalances."},
-    {n:"Overhead Cable Extension",eq:"Cable",kcal:5,g:U+"2021/04/Cable-Rope-Overhead-Triceps-Extension.gif",d:"Face away from cable, extend arms overhead. Stretches and works the long triceps head."},
-    {n:"Triceps Dips",eq:"Bodyweight",kcal:8,g:U+"2021/02/Triceps-Dips.gif",d:"Lower body until elbows ~90°, press back up. Lean slightly forward for chest, upright for triceps."},
-    {n:"Close-Grip Bench Press",eq:"Barbell, Bench",kcal:8,g:U+"2021/04/Close-Grip-Bench-Press.gif",d:"Grip shoulder-width, elbows tucked. Press from lower chest. Triceps-dominant compound."},
-    {n:"Dumbbell Triceps Kickback",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Kickback.gif",d:"Hinge forward, upper arm parallel to floor. Extend forearm back until straight, squeeze triceps, control return."}
+    {n:"Barbell Bench Press",eq:"Barbell, Bench",kcal:9,g:U+"2021/02/Barbell-Bench-Press.gif",d:"Lie flat, grip just outside shoulders. Lower bar to mid-chest, press up explosively. Keep shoulder blades pinned.",mp:"Chest (pectoralis major)",ms:"Front delts, triceps",sr:"4 sets x 5-8 reps - rest 2-3 min"},
+    {n:"Incline Barbell Bench Press",eq:"Barbell, Bench",kcal:8,g:U+"2021/02/Incline-Barbell-Bench-Press.gif",d:"Bench at 30–45°. Targets upper chest. Lower to upper chest, drive up without flaring elbows.",mp:"Upper chest (clavicular pec)",ms:"Front delts, triceps",sr:"4 sets x 5-8 reps - rest 2-3 min"},
+    {n:"Pec Deck Fly",eq:"Machine",kcal:6,g:U+"2021/02/Pec-Deck-Fly.gif",d:"Sit with back flat against pad. Bring arms together in a hugging arc, squeeze chest, control the return.",mp:"Chest (pectoralis major)",ms:"Front delts",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Incline Chest Fly Machine",eq:"Machine",kcal:6,g:U+"2023/06/Incline-Chest-Fly-Machine.gif",d:"Set seat so handles align with upper chest. Press handles together, squeeze, slow eccentric.",mp:"Upper chest",ms:"Front delts",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Low Cable Crossover",eq:"Cable",kcal:7,g:U+"2021/02/Low-Cable-Crossover.gif",d:"Pulleys low, sweep handles up and in toward chest. Great for lower/inner chest definition.",mp:"Lower / inner chest",ms:"Front delts",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"High Cable Crossover",eq:"Cable",kcal:7,g:U+"2021/02/High-Cable-Crossover.gif",d:"Pulleys high, pull down and across body. Hits lower chest. Slight forward lean.",mp:"Lower chest",ms:"Front delts",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Cable Upper Chest Crossover",eq:"Cable",kcal:7,g:U+"2021/10/Cable-Upper-Chest-Crossovers.gif",d:"Pulleys low, drive handles upward and together. Emphasises the upper chest fibres.",mp:"Upper chest",ms:"Front delts",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Dumbbell Fly",eq:"Dumbbells, Bench",kcal:6,g:U+"2021/02/Dumbbell-Fly.gif",d:"Flat bench, slight elbow bend. Open arms wide in arc, feel chest stretch, bring back up.",mp:"Chest (pectoralis major)",ms:"Front delts",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Dumbbell Pullover",eq:"Dumbbells, Bench",kcal:7,g:U+"2021/02/Dumbbell-Pullover.gif",d:"Hold one DB over chest, lower behind head in arc, pull back over. Chest + lat stretch.",mp:"Chest (pectoralis major)",ms:"Lats, triceps (long head), serratus",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Overhead Barbell Press",eq:"Barbell",kcal:8,g:U+"2021/02/Barbell-Shoulder-Press.gif",d:"Standing, bar at shoulders. Press overhead, lock out, lower under control. Brace core hard.",mp:"Shoulders (front & side delts)",ms:"Triceps, upper chest, traps",sr:"3-4 sets x 6-10 reps - rest 2-3 min"},
+    {n:"Dumbbell Shoulder Press",eq:"Dumbbells",kcal:7,g:U+"2021/02/Dumbbell-Shoulder-Press.gif",d:"Seated or standing. Press DBs from shoulder height to overhead, palms forward, no arching.",mp:"Shoulders (front & side delts)",ms:"Triceps, upper chest",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Dumbbell Lateral Raise",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Lateral-Raise.gif",d:"Slight bend in elbows, raise DBs out to sides to shoulder height. Lead with elbows, control down.",mp:"Side delts (medial deltoid)",ms:"Front delts, traps",sr:"3-4 sets x 12-20 reps - rest 45-75s"},
+    {n:"Cable Lateral Raise",eq:"Cable",kcal:5,g:U+"2021/02/Cable-Lateral-Raise.gif",d:"Cable behind back, raise arm out to side. Constant tension on the side delt throughout.",mp:"Side delts (medial deltoid)",ms:"Traps",sr:"3-4 sets x 12-20 reps - rest 45-75s"},
+    {n:"Front Dumbbell Raise",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Front-Raise.gif",d:"Raise DBs straight in front to shoulder height. Targets front delts. No swinging.",mp:"Front delts (anterior deltoid)",ms:"Side delts, upper chest",sr:"3-4 sets x 12-15 reps - rest 45-75s"},
+    {n:"Arnold Press",eq:"Dumbbells",kcal:7,g:U+"2021/08/Arnold-Press.gif",d:"Start palms facing you, rotate out as you press overhead. Hits all three delt heads.",mp:"Shoulders (all three delt heads)",ms:"Triceps, upper chest",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Machine Shoulder Press",eq:"Machine",kcal:6,g:U+"2021/08/Lever-Shoulder-Press.gif",d:"Seated, back flat. Press handles overhead. Stable path, good for progressive overload.",mp:"Shoulders (front & side delts)",ms:"Triceps",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Triceps Pushdown",eq:"Cable",kcal:5,g:U+"2021/02/Pushdown.gif",d:"Elbows pinned at sides, push bar down to full extension, squeeze triceps, control up.",mp:"Triceps (lateral & medial head)",ms:"-",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"One-Arm Triceps Pushdown",eq:"Cable",kcal:5,g:U+"2022/11/One-arm-triceps-pushdown.gif",d:"Single arm, elbow pinned, push handle down to full lockout. Squeeze triceps, control up. Great for fixing side-to-side imbalances.",mp:"Triceps (lateral & medial head)",ms:"-",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Overhead Cable Extension",eq:"Cable",kcal:5,g:U+"2021/04/Cable-Rope-Overhead-Triceps-Extension.gif",d:"Face away from cable, extend arms overhead. Stretches and works the long triceps head.",mp:"Triceps (long head)",ms:"-",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Triceps Dips",eq:"Bodyweight",kcal:8,g:U+"2021/02/Triceps-Dips.gif",d:"Lower body until elbows ~90°, press back up. Lean slightly forward for chest, upright for triceps.",mp:"Triceps",ms:"Lower chest, front delts",sr:"3-4 sets x 8-12 reps - rest 90s-2 min"},
+    {n:"Close-Grip Bench Press",eq:"Barbell, Bench",kcal:8,g:U+"2021/04/Close-Grip-Bench-Press.gif",d:"Grip shoulder-width, elbows tucked. Press from lower chest. Triceps-dominant compound.",mp:"Triceps",ms:"Chest, front delts",sr:"3-4 sets x 6-10 reps - rest 2-3 min"},
+    {n:"Dumbbell Triceps Kickback",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Kickback.gif",d:"Hinge forward, upper arm parallel to floor. Extend forearm back until straight, squeeze triceps, control return.",mp:"Triceps",ms:"Rear delt",sr:"3-4 sets x 10-15 reps - rest 60-90s"}
   ],
   pull:[
-    {n:"Lat Pulldown",eq:"Cable, Machine",kcal:7,g:U+"2021/02/Lat-Pulldown.gif",d:"Wide grip, pull bar to upper chest, drive elbows down and back. Squeeze lats, control up."},
-    {n:"Front Lat Pulldown (Lever)",eq:"Machine",kcal:7,g:U+"2021/05/Front-Pulldown.gif",d:"Pull handles down to chest level. Lean back slightly, focus on lat contraction."},
-    {n:"Cable Rear Pulldown",eq:"Cable",kcal:7,g:U+"2021/08/Cable-Rear-Pulldown.gif",d:"Pull bar behind neck OR to chest with control. Engages lats and rear delts."},
-    {n:"Pull-Up",eq:"Bodyweight",kcal:9,g:U+"2021/02/Pull-up.gif",d:"Dead hang, pull chin over bar by driving elbows down. Full stretch at bottom, no kipping."},
-    {n:"Seated Cable Row",eq:"Cable",kcal:7,g:U+"2021/02/Seated-Cable-Row.gif",d:"Pull handle to lower stomach, squeeze shoulder blades, keep torso upright. Slow return."},
-    {n:"Bent Over Barbell Row",eq:"Barbell",kcal:8,g:U+"2021/02/Barbell-Bent-Over-Row.gif",d:"Hinge at hips, flat back. Pull bar to lower ribs, squeeze back, lower under control."},
-    {n:"Dumbbell Row",eq:"Dumbbells, Bench",kcal:7,g:U+"2021/02/Dumbbell-Row.gif",d:"One knee on bench, pull DB to hip, elbow tight. Squeeze lat at top, full stretch at bottom."},
-    {n:"T-Bar Row",eq:"Barbell, Machine",kcal:8,g:U+"2021/04/t-bar-rows.gif",d:"Straddle bar, hinge forward, row weight to chest. Thick back builder, keep back flat."},
-    {n:"Face Pull",eq:"Cable",kcal:5,g:U+"2021/02/Face-Pull.gif",d:"Rope at face height, pull toward forehead, elbows high. Rear delts + upper back health."},
-    {n:"Straight-Arm Pulldown",eq:"Cable",kcal:6,g:U+"2021/05/Cable-Straight-Arm-Pulldown.gif",d:"Arms straight, push bar down in arc to thighs. Isolates the lats. No elbow bend."},
-    {n:"Barbell Deadlift",eq:"Barbell",kcal:11,g:U+"2021/02/Barbell-Deadlift.gif",d:"Hinge, flat back, bar over mid-foot. Drive through floor, lock out hips. King of pulls."},
-    {n:"Barbell Shrug",eq:"Barbell",kcal:5,g:U+"2021/02/Barbell-Shrug.gif",d:"Hold bar, shrug shoulders straight up toward ears, squeeze traps, lower slow. No rolling."},
-    {n:"Dumbbell Shrug",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Shrug.gif",d:"DBs at sides, elevate shoulders straight up, hold, lower. Pure trap work."},
-    {n:"Barbell Biceps Curl",eq:"Barbell",kcal:5,g:U+"2021/02/Barbell-Curl.gif",d:"Elbows pinned, curl bar up, squeeze biceps, lower slowly. Don't swing the back."},
-    {n:"Dumbbell Biceps Curl",eq:"Dumbbells",kcal:5,g:U+"2021/01/Dumbbell-Curl.gif",d:"Curl DBs, supinate wrist as you lift. Control the negative. Alternate or together."},
-    {n:"Hammer Curl",eq:"Dumbbells",kcal:5,g:U+"2021/02/Hammer-Curl.gif",d:"Neutral grip (palms facing in), curl up. Targets brachialis and forearm for thicker arms."},
-    {n:"Cable Biceps Curl",eq:"Cable",kcal:5,g:U+"2021/02/Cable-Curl.gif",d:"Constant tension curl. Elbows fixed, curl handle up, squeeze, slow release."},
-    {n:"Preacher Curl",eq:"Machine, Barbell",kcal:5,g:U+"2021/02/Dumbbell-Preacher-Curl.gif",d:"Arms on angled pad, curl up. Isolates biceps, eliminates cheating. Full stretch at bottom."},
-    {n:"Concentration Curl",eq:"Dumbbells",kcal:4,g:U+"2021/02/Concentration-Curl.gif",d:"Seated, elbow on inner thigh, curl DB. Peak biceps contraction, zero momentum."},
-    {n:"Reverse Pec Deck (Rear Delt)",eq:"Machine",kcal:5,g:U+"2021/08/Lever-Reverse-Fly.gif",d:"Face the pad, pull handles back in arc. Isolates rear delts and upper back."},
-    {n:"Chin-Up",eq:"Bodyweight",kcal:9,g:U+"2021/04/Chin-Up.gif",d:"Underhand grip pull-up. More biceps involvement. Pull chin over bar, full hang at bottom."},
-    {n:"Wide Grip Lat Pulldown",eq:"Cable",kcal:7,g:U+"2021/04/Wide-Grip-Lat-Pulldown.gif",d:"Wider than shoulders, pull to chest. Emphasises lat width. Drive elbows down."}
+    {n:"Lat Pulldown",eq:"Cable, Machine",kcal:7,g:U+"2021/02/Lat-Pulldown.gif",d:"Wide grip, pull bar to upper chest, drive elbows down and back. Squeeze lats, control up.",mp:"Lats (latissimus dorsi)",ms:"Biceps, rear delts, mid-back",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Front Lat Pulldown (Lever)",eq:"Machine",kcal:7,g:U+"2021/05/Front-Pulldown.gif",d:"Pull handles down to chest level. Lean back slightly, focus on lat contraction.",mp:"Lats",ms:"Biceps, mid-back",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Cable Rear Pulldown",eq:"Cable",kcal:7,g:U+"2021/08/Cable-Rear-Pulldown.gif",d:"Pull bar behind neck OR to chest with control. Engages lats and rear delts.",mp:"Lats",ms:"Rear delts, biceps",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Pull-Up",eq:"Bodyweight",kcal:9,g:U+"2021/02/Pull-up.gif",d:"Dead hang, pull chin over bar by driving elbows down. Full stretch at bottom, no kipping.",mp:"Lats",ms:"Biceps, mid-back, forearms",sr:"3-4 sets x 5-10 reps - rest 2-3 min"},
+    {n:"Seated Cable Row",eq:"Cable",kcal:7,g:U+"2021/02/Seated-Cable-Row.gif",d:"Pull handle to lower stomach, squeeze shoulder blades, keep torso upright. Slow return.",mp:"Mid-back (rhomboids, traps) & lats",ms:"Biceps, rear delts",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Bent Over Barbell Row",eq:"Barbell",kcal:8,g:U+"2021/02/Barbell-Bent-Over-Row.gif",d:"Hinge at hips, flat back. Pull bar to lower ribs, squeeze back, lower under control.",mp:"Mid-back (lats, rhomboids)",ms:"Biceps, rear delts, spinal erectors",sr:"3-4 sets x 6-10 reps - rest 2-3 min"},
+    {n:"Dumbbell Row",eq:"Dumbbells, Bench",kcal:7,g:U+"2021/02/Dumbbell-Row.gif",d:"One knee on bench, pull DB to hip, elbow tight. Squeeze lat at top, full stretch at bottom.",mp:"Lats & mid-back",ms:"Biceps, rear delts",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"T-Bar Row",eq:"Barbell, Machine",kcal:8,g:U+"2021/04/t-bar-rows.gif",d:"Straddle bar, hinge forward, row weight to chest. Thick back builder, keep back flat.",mp:"Mid-back (lats, rhomboids)",ms:"Biceps, rear delts, erectors",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Face Pull",eq:"Cable",kcal:5,g:U+"2021/02/Face-Pull.gif",d:"Rope at face height, pull toward forehead, elbows high. Rear delts + upper back health.",mp:"Rear delts & mid-traps/rhomboids",ms:"Rotator cuff",sr:"3-4 sets x 15-20 reps - rest 45-75s"},
+    {n:"Straight-Arm Pulldown",eq:"Cable",kcal:6,g:U+"2021/05/Cable-Straight-Arm-Pulldown.gif",d:"Arms straight, push bar down in arc to thighs. Isolates the lats. No elbow bend.",mp:"Lats",ms:"Triceps (long head), teres major",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Barbell Deadlift",eq:"Barbell",kcal:11,g:U+"2021/02/Barbell-Deadlift.gif",d:"Hinge, flat back, bar over mid-foot. Drive through floor, lock out hips. King of pulls.",mp:"Posterior chain (glutes, hamstrings, erectors)",ms:"Lats, traps, forearms, quads",sr:"3-4 sets x 4-6 reps - rest ~3 min"},
+    {n:"Barbell Shrug",eq:"Barbell",kcal:5,g:U+"2021/02/Barbell-Shrug.gif",d:"Hold bar, shrug shoulders straight up toward ears, squeeze traps, lower slow. No rolling.",mp:"Traps (upper)",ms:"Forearms, levator scapulae",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Dumbbell Shrug",eq:"Dumbbells",kcal:5,g:U+"2021/02/Dumbbell-Shrug.gif",d:"DBs at sides, elevate shoulders straight up, hold, lower. Pure trap work.",mp:"Traps (upper)",ms:"Forearms",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Barbell Biceps Curl",eq:"Barbell",kcal:5,g:U+"2021/02/Barbell-Curl.gif",d:"Elbows pinned, curl bar up, squeeze biceps, lower slowly. Don't swing the back.",mp:"Biceps brachii",ms:"Brachialis, forearms",sr:"3-4 sets x 8-12 reps - rest 60-90s"},
+    {n:"Dumbbell Biceps Curl",eq:"Dumbbells",kcal:5,g:U+"2021/01/Dumbbell-Curl.gif",d:"Curl DBs, supinate wrist as you lift. Control the negative. Alternate or together.",mp:"Biceps brachii",ms:"Brachialis, forearms",sr:"3-4 sets x 8-12 reps - rest 60-90s"},
+    {n:"Hammer Curl",eq:"Dumbbells",kcal:5,g:U+"2021/02/Hammer-Curl.gif",d:"Neutral grip (palms facing in), curl up. Targets brachialis and forearm for thicker arms.",mp:"Brachialis & brachioradialis",ms:"Biceps, forearms",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Cable Biceps Curl",eq:"Cable",kcal:5,g:U+"2021/02/Cable-Curl.gif",d:"Constant tension curl. Elbows fixed, curl handle up, squeeze, slow release.",mp:"Biceps brachii",ms:"Brachialis",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Preacher Curl",eq:"Machine, Barbell",kcal:5,g:U+"2021/02/Dumbbell-Preacher-Curl.gif",d:"Arms on angled pad, curl up. Isolates biceps, eliminates cheating. Full stretch at bottom.",mp:"Biceps brachii (short head)",ms:"Brachialis",sr:"3-4 sets x 8-12 reps - rest 60-90s"},
+    {n:"Concentration Curl",eq:"Dumbbells",kcal:4,g:U+"2021/02/Concentration-Curl.gif",d:"Seated, elbow on inner thigh, curl DB. Peak biceps contraction, zero momentum.",mp:"Biceps brachii (peak)",ms:"Brachialis",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Reverse Pec Deck (Rear Delt)",eq:"Machine",kcal:5,g:U+"2021/08/Lever-Reverse-Fly.gif",d:"Face the pad, pull handles back in arc. Isolates rear delts and upper back.",mp:"Rear delts (posterior deltoid)",ms:"Rhomboids, mid-traps",sr:"3-4 sets x 12-20 reps - rest 45-75s"},
+    {n:"Chin-Up",eq:"Bodyweight",kcal:9,g:U+"2021/04/Chin-Up.gif",d:"Underhand grip pull-up. More biceps involvement. Pull chin over bar, full hang at bottom.",mp:"Lats & biceps",ms:"Mid-back, forearms",sr:"3-4 sets x 5-10 reps - rest 2-3 min"},
+    {n:"Wide Grip Lat Pulldown",eq:"Cable",kcal:7,g:U+"2021/04/Wide-Grip-Lat-Pulldown.gif",d:"Wider than shoulders, pull to chest. Emphasises lat width. Drive elbows down.",mp:"Lats (width)",ms:"Biceps, rear delts",sr:"3-4 sets x 8-12 reps - rest ~2 min"}
   ],
   legs:[
-    {n:"Barbell Back Squat",eq:"Barbell",kcal:11,g:U+"2021/02/BARBELL-SQUAT.gif",d:"Bar on traps, brace, sit back and down to parallel, drive up through heels. The leg king."},
-    {n:"Smith Machine Squat",eq:"Machine",kcal:9,g:U+"2024/10/smith-machine-squat.gif",d:"Fixed bar path, safer for going heavy solo. Feet slightly forward, descend to parallel."},
-    {n:"Leg Press",eq:"Machine",kcal:9,g:U+"2015/11/Leg-Press.gif",d:"Feet shoulder-width on platform, lower to ~90°, press without locking knees hard. Quad mass."},
-    {n:"Dumbbell Squat",eq:"Dumbbells",kcal:8,g:U+"2023/09/Dumbbell-Squat.gif",d:"Hold DBs at sides or one at chest, squat deep keeping torso upright, drive through heels. Quad + glute builder."},
-    {n:"Romanian Deadlift",eq:"Barbell",kcal:10,g:U+"2021/02/Barbell-Romanian-Deadlift.gif",d:"Soft knees, hinge hips back, lower bar along legs, feel hamstring stretch, drive hips forward."},
-    {n:"Leg Extension",eq:"Machine",kcal:6,g:U+"2021/02/LEG-EXTENSION.gif",d:"Extend legs to straight, squeeze quads at top, lower slow. Pure quad isolation."},
-    {n:"Lying Leg Curl",eq:"Machine",kcal:6,g:U+"2021/02/Leg-Curl.gif",d:"Curl pad toward glutes, squeeze hamstrings, control back. Don't let hips lift."},
-    {n:"Seated Leg Curl",eq:"Machine",kcal:6,g:U+"2021/08/Seated-Leg-Curl.gif",d:"Curl legs under seated, squeeze hams. Good stretch position for hamstring growth."},
-    {n:"Walking Lunge",eq:"Dumbbells",kcal:9,g:U+"2021/02/Dumbbell-Walking-Lunge.gif",d:"Step forward, drop back knee toward floor, push off front heel. Alternate legs, controlled."},
-    {n:"Bulgarian Split Squat",eq:"Dumbbells",kcal:9,g:U+"2021/05/Dumbbell-Bulgarian-Split-Squat.gif",d:"Rear foot elevated, drop straight down, drive up through front heel. Brutal single-leg builder."},
-    {n:"Hack Squat",eq:"Machine",kcal:9,g:U+"2021/02/Sled-Hack-Squat.gif",d:"Shoulders under pads, descend deep, press up through heels. Heavy quad loading, back supported."},
-    {n:"Barbell Good Morning",eq:"Barbell",kcal:8,g:U+"2021/02/Barbell-Good-Morning.gif",d:"Bar on traps, soft knees, hinge at hips lowering torso toward parallel, drive hips back to stand. Hamstrings + lower back."},
-    {n:"Plie Dumbbell Squat",eq:"Dumbbells",kcal:7,g:U+"2023/01/Sumo-Plie-Dumbbell-Squat.gif",d:"Hold one DB between legs, wide stance toes out, squat down and up. Targets inner thighs and glutes."},
-    {n:"Standing Calf Raise",eq:"Machine",kcal:5,g:U+"2021/06/Standing-Calf-Raise.gif",d:"Rise onto toes as high as possible, squeeze calves, lower for a full stretch. Slow tempo."},
-    {n:"Seated Calf Raise",eq:"Machine",kcal:4,g:U+"2021/06/Lever-Seated-Calf-Raise.gif",d:"Pad on knees, raise heels, squeeze, lower deep. Targets the soleus muscle."},
-    {n:"Leg Press Calf Raise",eq:"Machine",kcal:5,g:U+"2021/05/Leg-Press-Calf-Raise.gif",d:"Balls of feet on platform edge, push through toes, full stretch and contraction."},
-    {n:"Barbell Sumo Squat",eq:"Barbell",kcal:10,g:U+"2021/02/Barbell-sumo-squat.gif",d:"Wide stance, toes out, bar on traps. Squat down keeping chest up. Hits quads, glutes, inner thigh."},
-    {n:"Barbell Lunge",eq:"Barbell",kcal:9,g:U+"2021/05/Barbell-Lunge.gif",d:"Bar on traps, step forward into a lunge, drop back knee, drive up through front heel. Alternate legs."},
-    {n:"Dumbbell Straight Leg Deadlift",eq:"Dumbbells",kcal:8,g:U+"2021/04/Dumbbell-Straight-Leg-Deadlift.gif",d:"DBs in front, legs near-straight, hinge at hips lowering weights, feel hamstring stretch, drive hips forward to stand. Targets glutes + hamstrings."},
-    {n:"Sumo Deadlift",eq:"Barbell",kcal:11,g:U+"2021/04/Barbell-Sumo-Deadlift.gif",d:"Wide stance, hands inside knees, drive up through heels. Hits glutes, hams, inner thigh."},
-    {n:"Dumbbell Romanian Deadlift",eq:"Dumbbells",kcal:8,g:U+"2021/04/Dumbbell-Romanian-Deadlift.gif",d:"DBs in front, hinge hips back, lower along legs, feel hamstring stretch, stand tall."},
-    {n:"Hip Adduction Machine",eq:"Machine",kcal:5,g:U+"2021/05/Lever-Side-Hip-Adduction.gif",d:"Squeeze legs together against the pads, control the return. Isolates the inner thigh adductors."}
+    {n:"Barbell Back Squat",eq:"Barbell",kcal:11,g:U+"2021/02/BARBELL-SQUAT.gif",d:"Bar on traps, brace, sit back and down to parallel, drive up through heels. The leg king.",mp:"Quads & glutes",ms:"Hamstrings, adductors, erectors, core",sr:"3-4 sets x 5-8 reps - rest 2-3 min"},
+    {n:"Smith Machine Squat",eq:"Machine",kcal:9,g:U+"2024/10/smith-machine-squat.gif",d:"Fixed bar path, safer for going heavy solo. Feet slightly forward, descend to parallel.",mp:"Quads & glutes",ms:"Hamstrings, core",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Leg Press",eq:"Machine",kcal:9,g:U+"2015/11/Leg-Press.gif",d:"Feet shoulder-width on platform, lower to ~90°, press without locking knees hard. Quad mass.",mp:"Quads & glutes",ms:"Hamstrings, adductors",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Dumbbell Squat",eq:"Dumbbells",kcal:8,g:U+"2023/09/Dumbbell-Squat.gif",d:"Hold DBs at sides or one at chest, squat deep keeping torso upright, drive through heels. Quad + glute builder.",mp:"Quads & glutes",ms:"Hamstrings, core",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Romanian Deadlift",eq:"Barbell",kcal:10,g:U+"2021/02/Barbell-Romanian-Deadlift.gif",d:"Soft knees, hinge hips back, lower bar along legs, feel hamstring stretch, drive hips forward.",mp:"Hamstrings & glutes",ms:"Spinal erectors, lats, forearms",sr:"3-4 sets x 6-10 reps - rest 2-3 min"},
+    {n:"Leg Extension",eq:"Machine",kcal:6,g:U+"2021/02/LEG-EXTENSION.gif",d:"Extend legs to straight, squeeze quads at top, lower slow. Pure quad isolation.",mp:"Quads (rectus femoris, vasti)",ms:"-",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Lying Leg Curl",eq:"Machine",kcal:6,g:U+"2021/02/Leg-Curl.gif",d:"Curl pad toward glutes, squeeze hamstrings, control back. Don't let hips lift.",mp:"Hamstrings",ms:"Calves (gastrocnemius)",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Seated Leg Curl",eq:"Machine",kcal:6,g:U+"2021/08/Seated-Leg-Curl.gif",d:"Curl legs under seated, squeeze hams. Good stretch position for hamstring growth.",mp:"Hamstrings",ms:"Calves (gastrocnemius)",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Walking Lunge",eq:"Dumbbells",kcal:9,g:U+"2021/02/Dumbbell-Walking-Lunge.gif",d:"Step forward, drop back knee toward floor, push off front heel. Alternate legs, controlled.",mp:"Quads & glutes",ms:"Hamstrings, adductors, core",sr:"3 sets x 10-12 reps per leg - rest ~2 min"},
+    {n:"Bulgarian Split Squat",eq:"Dumbbells",kcal:9,g:U+"2021/05/Dumbbell-Bulgarian-Split-Squat.gif",d:"Rear foot elevated, drop straight down, drive up through front heel. Brutal single-leg builder.",mp:"Quads & glutes",ms:"Hamstrings, adductors, core",sr:"3 sets x 8-12 reps per leg - rest ~2 min"},
+    {n:"Hack Squat",eq:"Machine",kcal:9,g:U+"2021/02/Sled-Hack-Squat.gif",d:"Shoulders under pads, descend deep, press up through heels. Heavy quad loading, back supported.",mp:"Quads",ms:"Glutes, hamstrings",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Barbell Good Morning",eq:"Barbell",kcal:8,g:U+"2021/02/Barbell-Good-Morning.gif",d:"Bar on traps, soft knees, hinge at hips lowering torso toward parallel, drive hips back to stand. Hamstrings + lower back.",mp:"Hamstrings & glutes",ms:"Spinal erectors",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Plie Dumbbell Squat",eq:"Dumbbells",kcal:7,g:U+"2023/01/Sumo-Plie-Dumbbell-Squat.gif",d:"Hold one DB between legs, wide stance toes out, squat down and up. Targets inner thighs and glutes.",mp:"Inner thighs (adductors) & glutes",ms:"Quads",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+    {n:"Standing Calf Raise",eq:"Machine",kcal:5,g:U+"2021/06/Standing-Calf-Raise.gif",d:"Rise onto toes as high as possible, squeeze calves, lower for a full stretch. Slow tempo.",mp:"Calves (gastrocnemius)",ms:"Soleus",sr:"3-4 sets x 10-15 reps - slow, full stretch - rest 60-90s"},
+    {n:"Seated Calf Raise",eq:"Machine",kcal:4,g:U+"2021/06/Lever-Seated-Calf-Raise.gif",d:"Pad on knees, raise heels, squeeze, lower deep. Targets the soleus muscle.",mp:"Calves (soleus)",ms:"Gastrocnemius",sr:"3-4 sets x 10-15 reps - slow, full stretch - rest 60-90s"},
+    {n:"Leg Press Calf Raise",eq:"Machine",kcal:5,g:U+"2021/05/Leg-Press-Calf-Raise.gif",d:"Balls of feet on platform edge, push through toes, full stretch and contraction.",mp:"Calves (gastrocnemius)",ms:"Soleus",sr:"3-4 sets x 10-15 reps - slow, full stretch - rest 60-90s"},
+    {n:"Barbell Sumo Squat",eq:"Barbell",kcal:10,g:U+"2021/02/Barbell-sumo-squat.gif",d:"Wide stance, toes out, bar on traps. Squat down keeping chest up. Hits quads, glutes, inner thigh.",mp:"Quads, glutes & adductors",ms:"Hamstrings",sr:"3-4 sets x 6-10 reps - rest 2-3 min"},
+    {n:"Barbell Lunge",eq:"Barbell",kcal:9,g:U+"2021/05/Barbell-Lunge.gif",d:"Bar on traps, step forward into a lunge, drop back knee, drive up through front heel. Alternate legs.",mp:"Quads & glutes",ms:"Hamstrings, core",sr:"3 sets x 8-12 reps per leg - rest ~2 min"},
+    {n:"Dumbbell Straight Leg Deadlift",eq:"Dumbbells",kcal:8,g:U+"2021/04/Dumbbell-Straight-Leg-Deadlift.gif",d:"DBs in front, legs near-straight, hinge at hips lowering weights, feel hamstring stretch, drive hips forward to stand. Targets glutes + hamstrings.",mp:"Hamstrings & glutes",ms:"Spinal erectors",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Sumo Deadlift",eq:"Barbell",kcal:11,g:U+"2021/04/Barbell-Sumo-Deadlift.gif",d:"Wide stance, hands inside knees, drive up through heels. Hits glutes, hams, inner thigh.",mp:"Glutes, quads, adductors & hamstrings",ms:"Traps, erectors, forearms",sr:"3-4 sets x 4-6 reps - rest ~3 min"},
+    {n:"Dumbbell Romanian Deadlift",eq:"Dumbbells",kcal:8,g:U+"2021/04/Dumbbell-Romanian-Deadlift.gif",d:"DBs in front, hinge hips back, lower along legs, feel hamstring stretch, stand tall.",mp:"Hamstrings & glutes",ms:"Spinal erectors, forearms",sr:"3-4 sets x 8-12 reps - rest ~2 min"},
+    {n:"Hip Adduction Machine",eq:"Machine",kcal:5,g:U+"2021/05/Lever-Side-Hip-Adduction.gif",d:"Squeeze legs together against the pads, control the return. Isolates the inner thigh adductors.",mp:"Inner thighs (adductors)",ms:"-",sr:"3-4 sets x 12-15 reps - rest 60-90s"}
   ]
 };
 
@@ -101,22 +101,22 @@ LIB.lower = LIB.legs;
 
 // Core / Abs library (verified GIF URLs, original form cues)
 LIB.core = [
-  {n:"Plank",eq:"Bodyweight",kcal:5,g:U+"2023/07/High-Plank.gif",d:"Forearms or hands down, body in a straight line head to heels. Brace abs and glutes, don't let hips sag. Hold for time."},
-  {n:"Crunch",eq:"Bodyweight",kcal:4,g:U+"2015/11/Crunch.gif",d:"Lie back, knees bent. Curl shoulders off the floor by contracting abs, don't yank your neck. Lower slow."},
-  {n:"Bicycle Crunch",eq:"Bodyweight",kcal:6,g:U+"2021/02/Bicycle-Crunch.gif",d:"Opposite elbow to knee, alternating in a pedalling motion. Hits the obliques. Controlled, not rushed."},
-  {n:"Cross Crunch",eq:"Bodyweight",kcal:5,g:U+"2022/07/Cross-Crunch.gif",d:"Reach across the body, twisting shoulder toward the opposite hip. Targets obliques and upper abs."},
-  {n:"Lying Leg Raise",eq:"Bodyweight",kcal:5,g:U+"2022/08/Alternate-Leg-Raises.gif",d:"Flat on back, raise legs toward ceiling keeping them straight, lower without touching the floor. Lower abs."},
-  {n:"Lying Scissor Kick",eq:"Bodyweight",kcal:6,g:U+"2021/05/Lying-Scissor-Kick.gif",d:"Legs straight, alternate small up-down kicks just off the floor. Keep lower back pressed down. Lower abs."},
-  {n:"Seated Leg Pull-in",eq:"Bench",kcal:5,g:U+"2021/02/Seated-Bench-Leg-Pull-in.gif",d:"Sit on bench edge, lean back slightly, pull knees toward chest then extend out. Full ab contraction."},
-  {n:"Mountain Climber",eq:"Bodyweight",kcal:8,g:U+"2021/02/Mountain-climber.gif",d:"High plank, drive knees toward chest one at a time, quick pace. Core + cardio. Keep hips low."},
-  {n:"Cross-Body Mountain Climber",eq:"Bodyweight",kcal:8,g:U+"2022/07/Cross-Body-Mountain-Climber.gif",d:"Like a mountain climber but drive each knee toward the opposite elbow. Extra oblique work."},
-  {n:"Standing Cable Crunch",eq:"Cable",kcal:6,g:U+"2021/09/Standing-Cable-Crunch.gif",d:"Rope behind head, crunch down by contracting abs, hips stay fixed. Loadable ab work for progressive overload."},
-  {n:"Ab Coaster Machine",eq:"Machine",kcal:6,g:U+"2022/07/Ab-Coaster-Machine.gif",d:"Knees on pad, curl them up toward chest along the track. Machine-guided lower-ab work."},
-  {n:"Bear Crawl",eq:"Bodyweight",kcal:9,g:U+"2021/02/Bear-Crawl.gif",d:"On hands and toes, knees hovering, crawl forward keeping core tight and hips level. Full-body brace."},
-  {n:"Body Saw Plank",eq:"Bodyweight",kcal:6,g:U+"2025/07/body-saw-plank.gif",d:"From a forearm plank, rock body forward and back using your toes. Intense anti-extension core work."},
-  {n:"Side Plank Hip Adduction",eq:"Bodyweight",kcal:6,g:U+"2025/03/Side-Plank-Hip-Adduction-Copenhagen-adduction.gif",d:"Side plank position, hold the body in a straight line. Strengthens obliques and inner thigh."},
-  {n:"Dragon Flag",eq:"Bench",kcal:8,g:U+"2022/07/Leg-Raise-Dragon-Flag.gif",d:"Grip a bench overhead, raise the whole body to vertical then lower as one rigid line. Advanced ab strength."},
-  {n:"Standing Stomach Vacuum",eq:"Bodyweight",kcal:3,g:U+"2025/05/Standing-Stomach-Vacuum.gif",d:"Exhale fully, pull belly button in toward spine and hold. Trains the deep transverse abdominis. Great for waistline."}
+  {n:"Plank",eq:"Bodyweight",kcal:5,g:U+"2023/07/High-Plank.gif",d:"Forearms or hands down, body in a straight line head to heels. Brace abs and glutes, don't let hips sag. Hold for time.",mp:"Deep core (transverse abdominis) & rectus abdominis",ms:"Obliques, glutes",sr:"3 sets x 30-45s hold - rest 45-60s"},
+  {n:"Crunch",eq:"Bodyweight",kcal:4,g:U+"2015/11/Crunch.gif",d:"Lie back, knees bent. Curl shoulders off the floor by contracting abs, don't yank your neck. Lower slow.",mp:"Rectus abdominis (upper)",ms:"Obliques",sr:"3 sets x 15-20 reps - rest 45-60s"},
+  {n:"Bicycle Crunch",eq:"Bodyweight",kcal:6,g:U+"2021/02/Bicycle-Crunch.gif",d:"Opposite elbow to knee, alternating in a pedalling motion. Hits the obliques. Controlled, not rushed.",mp:"Obliques & rectus abdominis",ms:"Hip flexors",sr:"3 sets x 15-20 reps per side - rest 45-60s"},
+  {n:"Cross Crunch",eq:"Bodyweight",kcal:5,g:U+"2022/07/Cross-Crunch.gif",d:"Reach across the body, twisting shoulder toward the opposite hip. Targets obliques and upper abs.",mp:"Obliques & upper abs",ms:"-",sr:"3 sets x 12-20 reps - rest 45-60s"},
+  {n:"Lying Leg Raise",eq:"Bodyweight",kcal:5,g:U+"2022/08/Alternate-Leg-Raises.gif",d:"Flat on back, raise legs toward ceiling keeping them straight, lower without touching the floor. Lower abs.",mp:"Lower rectus abdominis",ms:"Hip flexors, obliques",sr:"3 sets x 12-15 reps - rest 45-60s"},
+  {n:"Lying Scissor Kick",eq:"Bodyweight",kcal:6,g:U+"2021/05/Lying-Scissor-Kick.gif",d:"Legs straight, alternate small up-down kicks just off the floor. Keep lower back pressed down. Lower abs.",mp:"Lower abs",ms:"Hip flexors",sr:"3 sets x 15-20 reps - rest 45-60s"},
+  {n:"Seated Leg Pull-in",eq:"Bench",kcal:5,g:U+"2021/02/Seated-Bench-Leg-Pull-in.gif",d:"Sit on bench edge, lean back slightly, pull knees toward chest then extend out. Full ab contraction.",mp:"Lower abs",ms:"Hip flexors",sr:"3 sets x 12-15 reps - rest 45-60s"},
+  {n:"Mountain Climber",eq:"Bodyweight",kcal:8,g:U+"2021/02/Mountain-climber.gif",d:"High plank, drive knees toward chest one at a time, quick pace. Core + cardio. Keep hips low.",mp:"Core (rectus abdominis)",ms:"Hip flexors, shoulders (+ cardio)",sr:"3 sets x 30-45s - rest 45-60s"},
+  {n:"Cross-Body Mountain Climber",eq:"Bodyweight",kcal:8,g:U+"2022/07/Cross-Body-Mountain-Climber.gif",d:"Like a mountain climber but drive each knee toward the opposite elbow. Extra oblique work.",mp:"Obliques & core",ms:"Hip flexors, shoulders",sr:"3 sets x 30-45s - rest 45-60s"},
+  {n:"Standing Cable Crunch",eq:"Cable",kcal:6,g:U+"2021/09/Standing-Cable-Crunch.gif",d:"Rope behind head, crunch down by contracting abs, hips stay fixed. Loadable ab work for progressive overload.",mp:"Rectus abdominis",ms:"Obliques",sr:"3-4 sets x 10-15 reps - rest 60-90s"},
+  {n:"Ab Coaster Machine",eq:"Machine",kcal:6,g:U+"2022/07/Ab-Coaster-Machine.gif",d:"Knees on pad, curl them up toward chest along the track. Machine-guided lower-ab work.",mp:"Lower abs",ms:"Hip flexors",sr:"3 sets x 12-15 reps - rest 45-60s"},
+  {n:"Bear Crawl",eq:"Bodyweight",kcal:9,g:U+"2021/02/Bear-Crawl.gif",d:"On hands and toes, knees hovering, crawl forward keeping core tight and hips level. Full-body brace.",mp:"Core (anti-rotation)",ms:"Shoulders, quads",sr:"3 sets x 30-40s - rest 45-60s"},
+  {n:"Body Saw Plank",eq:"Bodyweight",kcal:6,g:U+"2025/07/body-saw-plank.gif",d:"From a forearm plank, rock body forward and back using your toes. Intense anti-extension core work.",mp:"Deep core (anti-extension)",ms:"Obliques, shoulders",sr:"3 sets x 8-12 reps - rest 45-60s"},
+  {n:"Side Plank Hip Adduction",eq:"Bodyweight",kcal:6,g:U+"2025/03/Side-Plank-Hip-Adduction-Copenhagen-adduction.gif",d:"Side plank position, hold the body in a straight line. Strengthens obliques and inner thigh.",mp:"Obliques",ms:"Inner thigh (adductors), glute medius",sr:"3 sets x 20-40s per side - rest 45s"},
+  {n:"Dragon Flag",eq:"Bench",kcal:8,g:U+"2022/07/Leg-Raise-Dragon-Flag.gif",d:"Grip a bench overhead, raise the whole body to vertical then lower as one rigid line. Advanced ab strength.",mp:"Rectus abdominis (full) & deep core",ms:"Hip flexors, lats",sr:"3 sets x 5-8 reps - rest 60-90s"},
+  {n:"Standing Stomach Vacuum",eq:"Bodyweight",kcal:3,g:U+"2025/05/Standing-Stomach-Vacuum.gif",d:"Exhale fully, pull belly button in toward spine and hold. Trains the deep transverse abdominis. Great for waistline.",mp:"Transverse abdominis (deep core)",ms:"-",sr:"3-4 sets x 15-20s hold - rest 30-45s"}
 ];
 
 // Body-part libraries — derived from the verified push/pull/legs arrays (no new data)
@@ -346,15 +346,22 @@ function openBuilder(day){
         <div style="position:relative;flex-shrink:0" onclick="event.stopPropagation();openLightbox('${ex.g}','${ex.n.replace(/'/g,"")}')"><img class="ex-gif" loading="lazy" src="${ex.g}" alt="${ex.n}" data-file="${ex.g}" onerror="gifFallback(this)"><div class="gifph" style="display:none;position:absolute;inset:0;border-radius:12px;background:#21262d;place-items:center;font-size:24px">🏋️</div><div class="zoom-hint">⤢</div></div>
         <div class="ex-meta">
           <h4>${ex.n}</h4>
+          <div class="ex-muscle">🎯 ${ex.mp}</div>
           <div class="ex-tags">
             <span class="mtag eq">${ex.eq}</span>
+            <span class="mtag sr">${ex.sr}</span>
             <span class="mtag kcal">~${ex.kcal} kcal/set</span>
           </div>
         </div>
         <div class="checkbox">${sel?"✓":""}</div>
       </div>
-      <span class="expand-toggle" onclick="toggleInfo(${i})">How to perform ⌄</span>
-      <div class="ex-expand hidden" id="info-${i}"><b>Form:</b> ${ex.d}</div>`;
+      <span class="expand-toggle" onclick="toggleInfo(${i})">Details ⌄</span>
+      <div class="ex-expand hidden" id="info-${i}">
+        <div class="ex-detrow"><b>Targets</b> ${ex.mp}</div>
+        <div class="ex-detrow"><b>Also works</b> ${ex.ms}</div>
+        <div class="ex-detrow"><b>Sets &times; reps</b> ${ex.sr}</div>
+        <div class="ex-detrow"><b>Form</b> ${ex.d}</div>
+      </div>`;
     list.appendChild(card);
   });
   updateSelBar();
@@ -420,7 +427,7 @@ function renderTodaysPlan(){
       <div class="tpi-num">${pos+1}</div>
       <img loading="lazy" src="${ex.g}" data-file="${ex.g}" alt="${ex.n}"
         onclick="openLightbox('${ex.g}','${ex.n.replace(/'/g,"")}')" onerror="gifFallback(this)">
-      <div class="tpi-info"><h5>${ex.n}</h5><span>${ex.eq} · ~${ex.kcal} kcal/set</span></div>
+      <div class="tpi-info"><h5>${ex.n}</h5><span>🎯 ${ex.mp}</span><span>${ex.sr}</span></div>
       <div class="tpi-actions">
         ${btn}
         <button class="tp-del" onclick="removeFromToday(${exIdx})" title="Remove">✕</button>
@@ -544,10 +551,13 @@ function renderSessionEx(){
     <h2>${ex.n}</h2>
     <div class="ex-tags" style="justify-content:center;margin-top:8px">
       <span class="mtag eq">${ex.eq}</span>
+      <span class="mtag sr">${ex.sr}</span>
       <span class="mtag kcal">~${ex.kcal} kcal/set</span>
     </div>
+    <div class="s-muscle">🎯 <b>${ex.mp}</b>${ex.ms&&ex.ms!=="-"?` · also ${ex.ms}`:""}</div>
     <div class="setlist">${setHtml}</div>
     <div style="font-size:12px;color:var(--mut);margin-top:12px;line-height:1.5;text-align:left">
+      <b style="color:var(--txt)">Recommended:</b> ${ex.sr}<br>
       <b style="color:var(--txt)">Form:</b> ${ex.d}</div>`;
   const isLast = session.cur===session.ex.length-1;
   document.getElementById("s-next").textContent = isLast?"Finish ✓":"Next ›";

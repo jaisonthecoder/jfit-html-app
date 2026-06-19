@@ -1,4 +1,4 @@
-const CACHE = 'jfit-v3';
+const CACHE = 'jfit-v4';
 const ASSETS = [
   './',
   './index.html',
